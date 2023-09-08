@@ -1,0 +1,20 @@
+import java.lang.System;
+import java.util.Scanner;
+import java.util.Random;
+class HelloWorld {
+    public static void main(String[] args)
+    {
+        Scanner s1 = new Scanner(System.in);
+        
+       System.out.println(otp());
+       
+        
+    }
+    public static int otp()
+    {
+        Random rem=new Random();
+         int minValue=99;
+         int maxValue=1000;
+         return minValue + rem.nextInt(maxValue - minValue);
+    }
+}
